@@ -315,3 +315,33 @@
 .post-button:hover {
   background-color: #1a8cd8;
 }
+
+.tweet-actions button {
+  padding: 6px 8px;
+  border-radius: 20px;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+/* Comment */
+.tweet-actions button:nth-child(1):hover {
+  color: #1d9bf0;
+  background-color: rgba(29, 155, 240, 0.1);
+}
+
+/* Retweet */
+.tweet-actions button:nth-child(2):hover {
+  color: #00ba7c;
+  background-color: rgba(0, 186, 124, 0.1);
+}
+
+/* Like */
+.tweet-actions button:nth-child(3):hover {
+  color: #f91880;
+  background-color: rgba(249, 24, 128, 0.1);
+}
+
+/* Share */
+.tweet-actions button:nth-child(4):hover {
+  color: #1d9bf0;
+  background-color: rgba(29, 155, 240, 0.1);
+}
