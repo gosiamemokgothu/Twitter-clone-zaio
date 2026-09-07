@@ -110,3 +110,21 @@
 .profile-icon {
   font-size: 32px;
 }
+
+.nav-item i {
+  width: 26px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.nav-item span {
+  font-size: 20px;
+}
+
+.nav-item.active {
+  font-weight: 700;
+}
+
+.nav-item:hover {
+  background-color: rgba(15, 20, 25, 0.1);
+}
