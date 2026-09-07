@@ -437,3 +437,65 @@ body {
 .show-more:hover {
   background-color: #eff1f1;
 }
+
+.follow-container {
+  margin-top: 16px;
+  overflow: hidden;
+  background-color: #f7f9f9;
+  border-radius: 16px;
+}
+
+.follow-container h2 {
+  margin: 0;
+  padding: 12px 16px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.follow-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+}
+
+.follow-user:hover {
+  background-color: #eff1f1;
+}
+
+.follow-avatar {
+  flex-shrink: 0;
+  font-size: 40px;
+}
+
+.follow-details {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.follow-details strong,
+.follow-details span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.follow-details span {
+  color: #536471;
+  font-size: 14px;
+}
+
+.follow-button {
+  padding: 6px 16px;
+  border: none;
+  border-radius: 20px;
+  background-color: #0f1419;
+  color: white;
+  font-weight: 700;
+}
+
+.follow-button:hover {
+  background-color: #272c30;
+}
