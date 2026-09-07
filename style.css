@@ -499,3 +499,87 @@ body {
 .follow-button:hover {
   background-color: #272c30;
 }
+
+/* Tablet */
+@media (max-width: 1200px) {
+  .right-sidebar {
+    display: none;
+  }
+}
+
+/* Small tablet */
+@media (max-width: 900px) {
+  .sidebar {
+    width: 80px;
+    align-items: center;
+  }
+
+  .sidebar .nav-item span,
+  .profile-text,
+  .profile-actions .bi-three-dots {
+    display: none;
+  }
+
+  .nav-item {
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .nav-item i {
+    width: auto;
+  }
+
+  .twitter-button {
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    font-size: 0;
+  }
+
+  .twitter-button::before {
+    content: "+";
+    font-size: 26px;
+  }
+
+  .profile-actions {
+    padding: 4px;
+  }
+
+  .timeline {
+    width: calc(100% - 80px);
+    margin-left: 80px;
+  }
+}
+
+/* Mobile phone */
+@media (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+
+  .timeline {
+    width: 100%;
+    margin-left: 0;
+    border: none;
+  }
+
+  .home-header {
+    padding: 0 12px;
+  }
+
+  .post-tweet,
+  .tweet {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .tweet-heading {
+    flex-wrap: wrap;
+  }
+
+  .tweet-text {
+    overflow-wrap: anywhere;
+  }
+}
