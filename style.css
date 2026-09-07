@@ -345,3 +345,20 @@
   color: #1d9bf0;
   background-color: rgba(29, 155, 240, 0.1);
 }
+
+body {
+  overflow: hidden;
+}
+
+.timeline {
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.home-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+}
