@@ -31,3 +31,47 @@
   color: #0f1419;
   background-color: #e7e7e8;
 }
+
+.sidebar {
+  width: 275px;
+  min-height: 100vh;
+  padding: 0 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.twitter-button {
+  width: 90%;
+  margin-top: 12px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.profile-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: auto;
+  margin-bottom: 12px;
+  padding: 12px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.profile-actions:hover {
+  background-color: #e7e7e8;
+}
+
+.profile-icon {
+  font-size: 38px;
+}
+
+.profile-text {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.profile-text span {
+  color: #536471;
+}
