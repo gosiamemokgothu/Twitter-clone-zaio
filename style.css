@@ -33,11 +33,15 @@
 }
 
 .sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 275px;
-  min-height: 100vh;
+  height: 100vh;
   padding: 0 12px;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .twitter-button {
@@ -74,4 +78,35 @@
 
 .profile-text span {
   color: #536471;
+}
+
+.sidebar {
+  box-sizing: border-box;
+}
+
+.twitter-logo {
+  margin: 6px 12px;
+}
+
+.sidebar-nav {
+  gap: 0;
+}
+
+.nav-item {
+  padding: 7px 16px;
+  font-size: 18px;
+}
+
+.twitter-button {
+  margin-top: 6px;
+  padding: 8px;
+}
+
+.profile-actions {
+  margin-bottom: 4px;
+  padding: 8px;
+}
+
+.profile-icon {
+  font-size: 32px;
 }
