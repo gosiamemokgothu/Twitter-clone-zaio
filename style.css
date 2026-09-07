@@ -128,3 +128,40 @@
 .nav-item:hover {
   background-color: rgba(15, 20, 25, 0.1);
 }
+
+.timeline {
+  width: 600px;
+  min-height: 100vh;
+  margin-left: 275px;
+  border-left: 1px solid #eff3f4;
+  border-right: 1px solid #eff3f4;
+}
+
+.home-header {
+  height: 55px;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eff3f4;
+}
+
+.home-header h1 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.star-button {
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: #1d9bf0;
+  font-size: 20px;
+}
+
+.star-button:hover {
+  background-color: rgba(29, 155, 240, 0.1);
+}
