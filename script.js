@@ -58,3 +58,51 @@ postButton.addEventListener('click', function () {
   postTweetSection.insertAdjacentElement('afterend', newTweet);
   tweetInput.value = '';
 });
+
+document.addEventListener('click', function (event) {
+  const likeButton = event.target.closest('button[aria-label="Like"]');
+  if (!likeButton) {
+    return;
+  }
+
+  const icon = likeButton.querySelector('i');
+  const countSpan = likeButton.querySelector('span');
+  if (!icon || !countSpan) {
+    return;
+  }
+
+  const isLiked = icon.classList.contains('bi-heart-fill');
+
+  if (isLiked) {
+    icon.classList.remove('bi-heart-fill');
+    icon.classList.add('bi-heart');
+    likeButton.classList.remove('liked');
+
+    const count = parseInt(countSpan.textContent, 10) || 0;
+    countSpan.textContent = Math.max(0, count - 1);
+  } else {
+    icon.classList.remove('bi-heart');
+    icon.classList.add('bi-heart-fill');
+    likeButton.classList.add('liked');
+
+    const count = parseInt(countSpan.textContent, 10) || 0;
+    countSpan.textContent = count + 1;
+  }
+});
+
+document.addEventListener('click', function (event) {
+  const followButton = event.target.closest('.follow-button');
+  if (!followButton) {
+    return;
+  }
+
+  const isFollowing = followButton.classList.contains('following');
+
+  if (isFollowing) {
+    followButton.classList.remove('following');
+    followButton.textContent = 'Follow';
+  } else {
+    followButton.classList.add('following');
+    followButton.textContent = 'Following';
+  }
+});

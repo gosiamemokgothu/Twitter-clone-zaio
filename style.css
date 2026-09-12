@@ -340,6 +340,10 @@
   background-color: rgba(249, 24, 128, 0.1);
 }
 
+.tweet-actions button.liked {
+  color: #f91880;
+}
+
 /* Share */
 .tweet-actions button:nth-child(4):hover {
   color: #1d9bf0;
@@ -498,6 +502,16 @@ body {
 
 .follow-button:hover {
   background-color: #272c30;
+}
+
+.follow-button.following {
+  background-color: white;
+  color: #0f1419;
+  border: 1px solid #cfd9de;
+}
+
+.follow-button.following:hover {
+  background-color: #e7e7e8;
 }
 
 /* Tablet */
