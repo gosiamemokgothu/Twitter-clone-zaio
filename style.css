@@ -597,3 +597,11 @@ body {
     overflow-wrap: anywhere;
   }
 }
+
+#character-count {
+  display: block;
+  margin-bottom: 5px;
+  color: #536471;
+  font-size: 13px;
+  text-align: right;
+}

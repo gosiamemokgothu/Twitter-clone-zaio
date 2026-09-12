@@ -106,3 +106,23 @@ document.addEventListener('click', function (event) {
     followButton.textContent = 'Following';
   }
 });
+
+{
+  const characterInput = document.getElementById("tweet-input");
+  const characterCount = document.getElementById("character-count");
+  const postTweetButton = document.querySelector(".post-button");
+
+  function updateCharacterCount() {
+    const totalCharacters = characterInput.value.length;
+    characterCount.textContent = `${totalCharacters} / 280`;
+
+    if (totalCharacters >= 260) {
+      characterCount.style.color = "#f4212e";
+    } else {
+      characterCount.style.color = "#536471";
+    }
+  }
+
+  characterInput.addEventListener("input", updateCharacterCount);
+  postTweetButton.addEventListener("click", updateCharacterCount);
+}
